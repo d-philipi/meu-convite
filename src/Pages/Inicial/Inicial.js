@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 import './Inicial.css';
+import Timer from '../../components/Timer/Timer';
+import Menu from '../../components/Menu/Menu';
 
 function Inicial(params) {
     return (
@@ -10,6 +12,8 @@ function Inicial(params) {
                 <p>
                     Aqui estamos na página inícial.
                 </p>
+                <Timer/>
+                <Menu/>
             </div>
         </>
     );
