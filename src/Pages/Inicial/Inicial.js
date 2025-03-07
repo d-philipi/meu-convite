@@ -1,21 +1,26 @@
-import React from 'react';
-import Header from '../../components/Header/Header';
-import './Inicial.css';
-import Timer from '../../components/Timer/Timer';
-import Menu from '../../components/Menu/Menu';
+import React from "react";
+import "./Inicial.css";
+import Timer from "../../components/Timer/Timer";
+import imagem from "./imagem.jpeg";
 
-function Inicial(params) {
-    return (
-        <>
-            <div className="Inic">
-                <h1>PÁGINA INICIAL</h1>
-                <p>
-                    Aqui estamos na página inícial.
-                </p>
-                <Timer/>
-            </div>
-        </>
-    );
+function Inicial() {
+  return (
+    <>
+      <figure className="figura">
+        <img src={imagem} alt="" />
+        <figcaption>
+          Você está convidado ao
+          <br />
+          CHÁ DE CASA NOVA
+          <br />
+          &
+          <br />
+          ANIVERSÁRIO
+        </figcaption>
+      </figure>
+      <Timer />
+    </>
+  );
 }
 
 export default Inicial;
