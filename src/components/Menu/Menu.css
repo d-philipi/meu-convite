@@ -5,25 +5,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 .menu li{
     position: absolute;
     top: 0;
     list-style: none;
-    transform-origin: 100px;
     transition: 0.5s;
     transition-delay: calc(0.1s * var(--i));
-    transform: translateY(80px);
+    transform: translateY(22px);
 }
 
 .menu.activate li{
-    transform: translateY(calc(-150px / 3 * var(--i)));
+    top: -50px;
+    transform: translateY(calc(-180px / 3 * var(--i)));
 }
 
-.menu li a{
+.menu li .link{
     width: 40px;
     height: 40px;
     display: flex;
@@ -34,10 +34,6 @@
     border-radius: 50%; 
     box-shadow: 0 3px 4px rgba(255, 255, 255, 0.15);
     transition: 0.5s;
-}
-
-.menu li a:hover{
-    color: darkcyan;
 }
 
 .toggle {
@@ -65,13 +61,26 @@
     position: absolute;
     width: 0;
     height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
     transform-origin: 100px;
     transition: 1s;
-    background-color: red;
 }
 
 .menu.activate .music{
     width: 200px;
     height: 50px;
     transform: translateX(-160px);
+}
+
+.music a{
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
 }

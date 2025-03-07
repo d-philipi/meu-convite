@@ -3,6 +3,8 @@ import Inicial from '../Pages/Inicial/Inicial';
 import Convidados from '../Pages/Convidados/Convidados';
 import Presentes from '../Pages/Presentes/Presentes';
 import Header from './Header/Header';
+import Timer from './Timer/Timer';
+import Menu from './Menu/Menu';
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <Route path='/convidados' element={<Convidados/>}/>
       <Route path='/presentes' element={<Presentes/>}/>
     </Routes>
+    <Menu/>
     </BrowserRouter>
     
   );

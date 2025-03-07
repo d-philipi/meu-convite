@@ -13,7 +13,6 @@ function Inicial(params) {
                     Aqui estamos na página inícial.
                 </p>
                 <Timer/>
-                <Menu/>
             </div>
         </>
     );
